@@ -35,7 +35,7 @@ def separate_files(path):
     #files details.csv, detailVol.csv, detailTemp.csv is created in the project directory
 
 #the path is empty as it denotes the current project directory.
-#change the path if any different
+#change the path if stored in different directory
 filepath = os.path.abspath('')      
 separate_files(filepath)
 
