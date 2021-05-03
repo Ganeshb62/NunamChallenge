@@ -3,7 +3,7 @@ import numpy as np
 import re
 import os
 
-def separate_files(path):
+def separate_files():
     """ This function reads multiple sheets of three types from data.xlsx, data_1.xlsx 
     and creates three csv files namely detail.csv, detailVol.csv and detailTemp.csv """
     
@@ -11,6 +11,7 @@ def separate_files(path):
     df_detvol = pd.DataFrame()    #to store data collected from "DetailVol_67_*.xlsx"
     df_dettemp = pd.DataFrame()   #to store data collected from "DetailTemp_67_*.xlsx"
 
+    filepath = os.path.abspath('')  #change the path if stored in different directory
     files = os.listdir(filepath)    #list the files present in the filepath
 
     for file in files:      #loop through all the files
@@ -34,10 +35,8 @@ def separate_files(path):
 
     #files details.csv, detailVol.csv, detailTemp.csv is created in the project directory
 
-#the path is empty as it denotes the current project directory.
-#change the path if stored in different directory
-filepath = os.path.abspath('')      
-separate_files(filepath)
+#the path is empty as it denotes the current project directory. 
+separate_files()
 
 
         
