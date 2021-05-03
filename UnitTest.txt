@@ -1,0 +1,52 @@
+
+--- Test DataSeparation.py ---
+
+--- test if file is stored in the location after being combined -----
+
+======================================================================
+FAIL: test (unittestfunc.ActualTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ganesh/Workspace/NunamChallenge/unittestfunc.py", line 20, in test
+    self.AssertIsFile(path)
+  File "/Users/ganesh/Workspace/NunamChallenge/unittestfunc.py", line 12, in AssertIsFile
+    raise AssertionError("File Does not Exist: %s" %str(path))
+AssertionError: File Does not Exist: /detail.csv
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+
+
+
+ganesh@Ganeshs-MacBook-Air NunamChallenge % python3 -m unittest unittestfunc.py
+Success
+Success
+Success
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
+--- test if 7 sheets are combined by the function to create the csv file -----
+
+ganesh@Ganeshs-MacBook-Air NunamChallenge % /usr/bin/python3 /Users/ganesh/Workspace/NunamChallenge/unittestfunc.py
+testSeparation (__main__.ActualTest) ... Success
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
+ganesh@Ganeshs-MacBook-Air NunamChallenge % /usr/bin/python3 /Users/ganesh/Workspace/NunamChallenge/unittestfunc.py
+testSeparation (__main__.ActualTest) ... Success
+ok
+testfilecount (__main__.CountTest) ... Success
+ok
+
+----------------------------------------------------------------------
+Ran 2 test in 221s
+
