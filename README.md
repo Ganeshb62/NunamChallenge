@@ -16,7 +16,7 @@
       
         - type 'python3 -m notebook'
         
-        - Redirest to local host, and jupyter notebook opens
+        - Redirect to local host, and jupyter notebook opens
         
         - open 'LowPassFiltering.ipynb' and choose 'Cells'>'Run All'
         
