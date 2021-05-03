@@ -30,9 +30,13 @@ def separate_files(path):
     
     df_detail.to_csv("detail.csv", index=None, header=True)
     df_detvol.to_csv("detailVol.csv", index=None, header=True)
-    df_dettemp.to_csv("detailTemp.csv", index=None, header=True)
+    df_dettemp.to_csv("detailTemp.csv", index=None, header=True)  
 
-filepath = os.path.abspath('')
+    #files details.csv, detailVol.csv, detailTemp.csv is created in the project directory
+
+#the path is empty as it denotes the current project directory.
+#change the path if any different
+filepath = os.path.abspath('')      
 separate_files(filepath)
 
 
